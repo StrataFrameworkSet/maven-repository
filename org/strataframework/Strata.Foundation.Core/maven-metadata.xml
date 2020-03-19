@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.strataframework</groupId>
+  <artifactId>Strata.Foundation.Core</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20200319235100</lastUpdated>
+  </versioning>
+</metadata>
