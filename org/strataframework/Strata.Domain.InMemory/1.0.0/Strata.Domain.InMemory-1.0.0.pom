@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.strataframework</groupId>
+    <artifactId>Strata.Domain.InMemory</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>${jdk.version}</maven.compiler.source>
+        <maven.compiler.target>${jdk.version}</maven.compiler.target>
+        <github.global.server>github</github.global.server>
+        <encoding>UTF-8</encoding>
+    </properties>
+
+    <build>
+        <sourceDirectory>${basedir}/src</sourceDirectory>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>staging.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.basedir}/../../.maven-repo</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot.repo</id>
+            <name>Temporary Snapshot Repository</name>
+            <url>file://${project.basedir}/target/maven-snapshot-repo</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.strataframework</groupId>
+            <artifactId>Strata.Domain.Core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>

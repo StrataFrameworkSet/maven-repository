@@ -105,28 +105,6 @@
                     <goal>register</goal>
                 </goals>
             </plugin>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.12</version>
-                <configuration>
-                    <message>Maven artifacts for ${project.artifactId}-${project.version}</message>
-                    <noJekyll>true</noJekyll>
-                    <outputDirectory>../../.maven-repo</outputDirectory>
-                    <branch>refs/heads/prod</branch>
-                    <includes><include>**/*</include></includes>
-                    <repositoryName>maven-repository</repositoryName>
-                    <repositoryOwner>StrataFrameworkSet</repositoryOwner>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>deploy</phase>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
