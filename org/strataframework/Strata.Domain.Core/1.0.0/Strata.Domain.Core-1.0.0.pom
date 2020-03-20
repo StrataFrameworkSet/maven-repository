@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.strataframework</groupId>
-    <artifactId>Strata.Diagnostic.Core</artifactId>
+    <artifactId>Strata.Domain.Core</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -58,4 +58,11 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.strataframework</groupId>
+            <artifactId>Strata.Foundation.Core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 </project>
