@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.strataframework</groupId>
-    <artifactId>Strata.Domain.Core</artifactId>
+    <artifactId>Strata.Domain.InMemory</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -61,7 +61,7 @@
     <dependencies>
         <dependency>
             <groupId>org.strataframework</groupId>
-            <artifactId>Strata.Foundation.Core</artifactId>
+            <artifactId>Strata.Domain.Core</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
