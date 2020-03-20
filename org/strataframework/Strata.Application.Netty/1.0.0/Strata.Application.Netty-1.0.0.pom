@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.strataframework</groupId>
-    <artifactId>Strata.Application.Vertx</artifactId>
+    <artifactId>Strata.Application.Netty</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -14,13 +14,6 @@
         <github.global.server>github</github.global.server>
         <encoding>UTF-8</encoding>
     </properties>
-
-    <repositories>
-        <repository>
-            <id>confluent</id>
-            <url>http://packages.confluent.io/maven/</url>
-        </repository>
-    </repositories>
 
     <build>
         <sourceDirectory>${basedir}/src</sourceDirectory>
@@ -89,15 +82,10 @@
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-vertx</artifactId>
+            <artifactId>resteasy-netty4</artifactId>
             <version>4.5.1.Final</version>
         </dependency>
-        <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-core</artifactId>
-            <version>3.8.0</version>
-        </dependency>
-        <dependency>
+         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
