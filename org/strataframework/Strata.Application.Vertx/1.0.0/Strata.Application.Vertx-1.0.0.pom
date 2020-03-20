@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.strataframework</groupId>
-    <artifactId>Strata.Application.Core</artifactId>
+    <artifactId>Strata.Application.Vertx</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -24,17 +24,6 @@
 
     <build>
         <sourceDirectory>${basedir}/src</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${basedir}/resources/webroot</directory>
-                <includes>
-                    <include>*.html</include>
-                    <include>*.css</include>
-                    <include>*.js</include>
-                    <include>*.png</include>
-                </includes>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>com.github.github</groupId>
@@ -79,38 +68,8 @@
     <dependencies>
         <dependency>
             <groupId>org.strataframework</groupId>
-            <artifactId>Strata.Domain.Core</artifactId>
+            <artifactId>Strata.Application.Core</artifactId>
             <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-kafka-client</artifactId>
-            <version>3.6.2</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>2.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>io.confluent</groupId>
-            <artifactId>kafka-avro-serializer</artifactId>
-            <version>3.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-jaxrs2</artifactId>
-            <version>2.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-core</artifactId>
-            <version>2.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>2.0.8</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
@@ -130,25 +89,18 @@
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-jackson2-provider</artifactId>
+            <artifactId>resteasy-vertx</artifactId>
             <version>4.5.1.Final</version>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-jdk8</artifactId>
-            <version>2.10.1</version>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-core</artifactId>
+            <version>3.8.0</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.10.1</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
