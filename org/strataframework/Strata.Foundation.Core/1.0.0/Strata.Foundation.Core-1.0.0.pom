@@ -110,16 +110,15 @@
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
                 <configuration>
-                    <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
-                    <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-                    <outputDirectory>target/maven-repo</outputDirectory> <!-- matches distribution management repository url above -->
-                    <branch>refs/heads/prod</branch>                       <!-- remote branch name -->
+                    <message>Maven artifacts for ${project.artifactId}-${project.version}</message>
+                    <noJekyll>true</noJekyll>
+                    <outputDirectory>target/maven-repo</outputDirectory>
+                    <branch>refs/heads/prod</branch>
                     <includes><include>**/*</include></includes>
-                    <repositoryName>maven-repository</repositoryName>      <!-- github repo name -->
-                    <repositoryOwner>StrataFrameworkSet</repositoryOwner>    <!-- github username  -->
+                    <repositoryName>maven-repository</repositoryName>
+                    <repositoryOwner>StrataFrameworkSet</repositoryOwner>
                 </configuration>
                 <executions>
-                    <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
                     <execution>
                         <goals>
                             <goal>site</goal>
